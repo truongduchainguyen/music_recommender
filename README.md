@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## sbt project compiled with Scala 3
 
 ### Usage
@@ -6,3 +7,7 @@ This is a normal sbt project. You can compile code with `sbt compile`, run it wi
 
 For more information on the sbt-dotty plugin, see the
 [scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
+=======
+# music_recommender
+Music Recommender using Spark
+>>>>>>> refs/remotes/origin/main
