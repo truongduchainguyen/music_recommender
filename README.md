@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## sbt project compiled with Scala 3
 
 ### Usage
@@ -10,4 +9,3 @@ For more information on the sbt-dotty plugin, see the
 =======
 # music_recommender
 Music Recommender using Spark
->>>>>>> refs/remotes/origin/main
