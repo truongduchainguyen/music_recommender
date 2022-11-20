@@ -86,6 +86,8 @@ object Main {
         .toDF("user", "artist", "count")
     }
 
+    // artistByID.filter($"id" isin (1208690, 1003926)).show()
+
     val bArtistAlias = spark.sparkContext.broadcast(artistAlias)
     val trainData = buildCounts(rawUserArtistData, bArtistAlias)
     trainData.cache()
@@ -125,7 +127,17 @@ object Main {
         .limit(howMany)
     }
 
+    // model.userFactors.show(1, truncate=false)
+
     // val topRecommendations = makeRecommendations(model, userID, 5)
     // topRecommendations.show()
+
+    def areaUnderCurve(
+      positiveData: DataFrame,
+      bAllArtistIDs: Broadcast[Arrary[Int]],
+      predictFunction: (DataFrame => DataFrame)
+      ): Double = {
+        ...
+    }
   }
 }
